@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palm Sunday 2026 Liturgy</title>
-  <style>
+    <title>Palm Sunday 2026</title>
+    <style>
         :root {
             --liturgical-red: #990000;
             --text-main: #1a1a1a;
@@ -19,30 +19,63 @@
             margin: 0;
             padding: 0;
         }
-        header {
-            background-color: var(--liturgical-red);
+        /* Photo Header */
+        .hero-image {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                        url('https://images.unsplash.com/photo-1555696958-c5049b866f6f?auto=format&fit=crop&q=80&w=1000');
+            background-size: cover;
+            background-position: center;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             color: white;
-            padding: 1.5rem 1rem;
             text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            flex-direction: column;
+        }
+        .hero-image h1 {
+            font-size: 3rem;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+        }
+        .hero-image p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+            font-weight: 300;
         }
         .container {
             max-width: 600px;
             margin: 0 auto;
-            padding: 10px;
+            padding: 15px;
         }
         section {
             background: var(--card-bg);
             padding: 25px;
             margin-bottom: 20px;
             border-radius: 4px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
         }
-        h2 { color: var(--liturgical-red); font-size: 1.4rem; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
-        .reference { font-weight: 600; color: #666; font-size: 0.85rem; display: block; margin-bottom: 1.5rem; text-transform: uppercase; }
+        .gathering-call {
+            text-align: center;
+            font-weight: bold;
+            color: var(--liturgical-red);
+            padding: 20px;
+            border: 2px solid var(--liturgical-red);
+            background: white;
+            margin-bottom: 20px;
+        }
+        h2 { color: var(--liturgical-red); font-size: 1.4rem; border-bottom: 1px solid #eee; padding-bottom: 10px; }
+        .role { font-weight: bold; min-width: 25px; display: inline-block; }
+        .crowd-text { font-weight: bold; }
+        .rubric { font-style: italic; color: #777; text-align: center; display: block; margin: 20px 0; padding: 10px; border: 1px dashed #ccc; }
+        footer { text-align: center; padding: 40px; color: #888; font-size: 0.8rem; }
         
+        @media (max-width: 600px) {
+            .hero-image h1 { font-size: 2.2rem; }
+            body { font-size: 18px; }
+        }
         /* Role Markers */
         .role {
             font-weight: bold;
@@ -71,11 +104,6 @@
             background: #fffafa;
         }
         
-        footer { text-align: center; padding: 3rem 1rem; color: #888; font-size: 0.8rem; }
-        
-        @media (max-width: 600px) {
-            body { font-size: 19px; }
-        }
     </style>
 </head>
 <body>
