@@ -1,150 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palm Sunday 2026 (Year A) - Holy Week</title>
+    <title>Palm Sunday 2026 | Full Liturgy</title>
     <style>
         :root {
-            --liturgical-red: #a30000;
-            --text-dark: #1a1a1a;
-            --bg-light: #ffffff;
-            --muted: #666;
+            --liturgical-red: #990000;
+            --text-main: #222;
+            --bg-body: #f9f9f9;
+            --card-bg: #ffffff;
         }
-
         body {
-            font-family: -apple-system, "Segoe UI", Roboto, sans-serif;
-            line-height: 1.7;
-            color: var(--text-dark);
-            background-color: #f4f4f4;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: var(--text-main);
+            background-color: var(--bg-body);
             margin: 0;
             padding: 0;
         }
-
         header {
             background-color: var(--liturgical-red);
             color: white;
-            padding: 2.5rem 1rem;
+            padding: 2rem 1rem;
             text-align: center;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
-
         .container {
-            max-width: 650px;
+            max-width: 600px;
             margin: 0 auto;
-            background: var(--bg-light);
-            padding: 1.5rem;
-            min-height: 100vh;
+            padding: 10px;
         }
-
-        .reading {
-            margin-bottom: 2.5rem;
-            border-bottom: 1px solid #eee;
-            padding-bottom: 1.5rem;
+        section {
+            background: var(--card-bg);
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
         }
-
-        h2 {
-            color: var(--liturgical-red);
-            font-size: 1.4rem;
-            margin-bottom: 0.5rem;
-        }
-
-        .ref {
-            font-style: italic;
-            color: var(--muted);
-            font-size: 0.95rem;
-            display: block;
-            margin-bottom: 1rem;
-        }
-
-        .response {
-            font-weight: bold;
-            color: var(--liturgical-red);
-            display: block;
-            margin: 1rem 0;
-            padding-left: 10px;
-            border-left: 3px solid var(--liturgical-red);
-        }
-
-        p {
-            margin: 0.8rem 0;
-        }
-
-        .instructions {
-            font-style: italic;
-            color: #777;
-            font-size: 0.9rem;
-            margin-top: 1rem;
-        }
-
-        footer {
-            text-align: center;
-            padding: 2rem;
-            color: #888;
-            font-size: 0.8rem;
+        h2 { color: var(--liturgical-red); font-size: 1.5rem; margin-top: 0; border-bottom: 2px solid #eee; }
+        .reference { font-weight: 600; color: #666; font-size: 0.9rem; display: block; margin-bottom: 1rem; }
+        .response { font-weight: bold; color: var(--liturgical-red); font-style: italic; }
+        .rubric { font-style: italic; color: #777; font-size: 0.9rem; display: block; margin: 15px 0; }
+        footer { text-align: center; padding: 2rem; color: #aaa; font-size: 0.8rem; }
+        
+        /* High contrast for outdoor/bright church use */
+        @media (max-width: 600px) {
+            body { font-size: 19px; }
+            h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
-
 <body>
 
-    <header>
-        <h1>Palm Sunday</h1>
-        <p>Passion of the Lord | Year A</p>
-    </header>
+<header>
+    <div style="font-size: 0.8rem; text-transform: uppercase; letter-spacing: 1px;">Palm Sunday 2026</div>
+    <div style="font-size: 1.4rem; font-weight: bold;">The Passion of the Lord</div>
+</header>
 
-    <div class="container">
+<div class="container">
 
-        <section class="reading">
-            <h2>The Procession</h2>
-            <span class="ref">Matthew 21:1-11</span>
-            <p>When Jesus and the disciples drew near Jerusalem... Jesus sent two disciples, saying to them, "Go into
-                the village opposite you, and immediately you will find an ass tethered, and a colt with her. Untie them
-                and bring them here to me."</p>
-            <p>The very large crowd spread their cloaks on the road... and the crowds preceding him and those following
-                kept crying out and saying: <strong>"Hosanna to the Son of David; blessed is he who comes in the name of
-                    the Lord; hosanna in the highest."</strong></p>
-        </section>
+    <section>
+        <h2>The Procession</h2>
+        <span class="reference">Matthew 21:1-11</span>
+        <p>When Jesus and the disciples drew near Jerusalem and came to Bethphage on the Mount of Olives, Jesus sent two disciples, saying to them, "Go into the village opposite you, and immediately you will find an ass tethered, and a colt with her. Untie them and bring them here to me. And if anyone should say anything to you, reply, ‘The master has need of them.’ Then he will send them at once."</p>
+        <p>This happened so that what had been spoken through the prophet might be fulfilled: <em>Behold, your king comes to you, meek and riding on an ass, and on a colt, the foal of a beast of burden.</em></p>
+        <p>The disciples went and did as Jesus had ordered them. They brought the ass and the colt and laid their cloaks over them, and he sat upon them. The very large crowd spread their cloaks on the road, while others cut branches from the trees and strewed them on the road. The crowds preceding him and those following kept crying out and saying: "Hosanna to the Son of David; blessed is he who comes in the name of the Lord; hosanna in the highest."</p>
+        <p>And when he entered Jerusalem the whole city was shaken and asked, "Who is this?" And the crowds replied, "This is Jesus the prophet, from Nazareth in Galilee."</p>
+    </section>
 
-        <section class="reading">
-            <h2>First Reading</h2>
-            <span class="ref">Isaiah 50:4-7</span>
-            <p>The Lord GOD has given me a well-trained tongue, that I might know how to speak to the weary a word that
-                will rouse them. Morning after morning he opens my ear that I may hear...</p>
-        </section>
+    <section>
+        <h2>First Reading</h2>
+        <span class="reference">Isaiah 50:4-7</span>
+        <p>The Lord GOD has given me a well-trained tongue, that I might know how to speak to the weary a word that will rouse them. Morning after morning he opens my ear that I may hear; and I have not rebelled, have not turned back.</p>
+        <p>I gave my back to those who beat me, my cheeks to those who plucked my beard; my face I did not shield from buffets and spitting.</p>
+        <p>The Lord GOD is my help, therefore I am not disgraced; I have set my face like flint, knowing that I shall not be put to shame.</p>
+    </section>
 
-        <section class="reading">
-            <h2>Responsorial Psalm</h2>
-            <span class="ref">Psalm 22</span>
-            <span class="response">R. My God, my God, why have you abandoned me?</span>
-            <p>All who see me scoff at me; they mock me with parted lips, they wag their heads: "He relied on the LORD;
-                let him deliver him, let him rescue him, if he loves him."</p>
-        </section>
+    <section>
+        <h2>Responsorial Psalm</h2>
+        <span class="reference">Psalm 22:8-9, 17-18, 19-20, 23-24</span>
+        <p><span class="response">R. My God, my God, why have you abandoned me?</span></p>
+        <p>All who see me scoff at me; they mock me with parted lips, they wag their heads: "He relied on the LORD; let him deliver him, let him rescue him, if he loves him."</p>
+        <p><span class="response">R. My God, my God, why have you abandoned me?</span></p>
+        <p>Indeed, many dogs surround me, a pack of evildoers closes in upon me; They have pierced my hands and my feet; I can count all my bones.</p>
+        <p><span class="response">R. My God, my God, why have you abandoned me?</span></p>
+        <p>They divide my garments among them, and for my vesture they cast lots. But you, O LORD, be not far from me; O my help, hasten to aid me.</p>
+        <p><span class="response">R. My God, my God, why have you abandoned me?</span></p>
+    </section>
 
-        <section class="reading">
-            <h2>Second Reading</h2>
-            <span class="ref">Philippians 2:6-11</span>
-            <p>Christ Jesus, though he was in the form of God, did not regard equality with God something to be grasped.
-                Rather, he emptied himself, taking the form of a slave...</p>
-        </section>
+    <section>
+        <h2>Second Reading</h2>
+        <span class="reference">Philippians 2:6-11</span>
+        <p>Christ Jesus, though he was in the form of God, did not regard equality with God something to be grasped. Rather, he emptied himself, taking the form of a slave, coming in human likeness; and found human in appearance, he humbled himself, becoming obedient to the point of death, even death on a cross.</p>
+        <p>Because of this, God greatly exalted him and bestowed on him the name which is above every name, that at the name of Jesus every knee should bend, of those in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father.</p>
+    </section>
 
-        <section class="reading">
-            <h2>The Passion of Our Lord</h2>
-            <span class="ref">Matthew 27:11-54 (Short Version)</span>
-            <p>Jesus stood before the governor, Pontius Pilate, who questioned him, "Are you the king of the Jews?"
-                Jesus said, "You say so." And when he was accused by the chief priests and elders, he made no answer.
-            </p>
-            <p>Now on the occasion of the feast the governor was accustomed to release to the crowd one prisoner whom
-                they wished. At that time they had a notorious prisoner called Barabbas...</p>
-            <p class="instructions">[At the mention of the death of the Lord, all kneel and pause for a short time.]</p>
-        </section>
+    <section>
+        <h2>The Passion of Our Lord</h2>
+        <span class="reference">Matthew 27:11-54 (Abbreviated for Mobile)</span>
+        <p>Jesus stood before the governor, Pontius Pilate, who questioned him, "Are you the king of the Jews?" Jesus said, "You say so." And when he was accused by the chief priests and elders, he made no answer...</p>
+        <p>Now the centurion and those with him who were keeping watch over Jesus feared greatly when they saw the earthquake and all that was happening, and they said, "Truly, this was the Son of God!"</p>
+        <span class="rubric">[At the death of the Lord, all kneel and pause.]</span>
+    </section>
 
-        <footer>
-            <p>Holy Week 2026 | Year A - St. Matthew</p>
-        </footer>
-    </div>
+</div>
+
+<footer>
+    <p>Lectionary Year A | Matthew's Account</p>
+</footer>
 
 </body>
-
 </html>
