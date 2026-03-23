@@ -47,6 +47,28 @@
         .verse-break { margin-bottom: 1.5rem; display: block; }
         footer { text-align: center; padding: 3rem 1rem; color: #888; font-size: 0.8rem; }
         .top-link { color: var(--liturgical-red); text-decoration: none; font-weight: bold; }
+        /* Script Formatting */
+        .role {
+            font-weight: bold;
+            color: var(--liturgical-red);
+            display: inline-block;
+            min-width: 30px;
+        }
+        .christ { color: #000; font-weight: bold; }
+        .narrator { color: #444; font-weight: bold; }
+        .crowd { color: #d32f2f; font-weight: bold; }
+        
+        .rubric { 
+            font-style: italic; 
+            color: #777; 
+            font-size: 0.9rem; 
+            display: block; 
+            margin: 20px 0; 
+            text-align: center; 
+            border: 1px dashed #ccc; 
+            padding: 10px; 
+        }
+        footer { text-align: center; padding: 3rem 1rem; color: #888; font-size: 0.8rem; }
         
         @media (max-width: 600px) {
             body { font-size: 19px; }
@@ -67,11 +89,7 @@
         Everyone gather together in front of the church
     </div>
 
-    <section>
-        <h2>Hymn: The Palms</h2>
-        <span class="reference">Jean-Baptiste Faure</span>
-        <div class="hymn-text">
-            <p><strong>Verse 1</strong><br>
+<p><strong>Verse 1</strong><br>
             O’er all the way, green palms and flowers gay<br>
             Are strewn this day in festal preparation,<br>
             Where Jesus comes to wipe our tears away,<br>
@@ -82,7 +100,20 @@
             Let ev’ry voice resound with acclamation.<br>
             Hosanna! Praise to the Lord!<br>
             Bless Him who comes to bring us salvation!</p>
+            
+            <p><strong>Verse 2</strong><br>
+            His word goes forth, and people by its might<br>
+            Once more their freedom gain from degradation;<br>
+            Humanity doth give to each his right,<br>
+            While those in darkness find the heavenly light.</p>
+
+            <p><strong>Verse 3</strong><br>
+            Sing and rejoice, O blest Jerusalem,<br>
+            Of all thy sons behold the emancipation;<br>
+            Through boundless love, the Christ of Bethlehem<br>
+            Brings hope and faith to thee forevermore.</p>
         </div>
+        <a href="#procession" class="jump-btn">Begin the Procession Gospel ↓</a>
     </section>
     <section>
         <h2>The Procession</h2>
@@ -145,36 +176,81 @@
         <p>Because of this, God greatly exalted him and bestowed on him the name which is above every name, that at the name of Jesus every knee should bend, of those in heaven and on earth and under the earth, and every tongue confess that Jesus Christ is Lord, to the glory of God the Father.</p>
     </section>
 
-    <section>
+<header id="top">
+    <div style="font-size: 1.3rem; font-weight: bold;">The Passion of the Lord</div>
+</header>
+
+<div class="container">
+
+    <section id="passion">
         <h2>The Passion of Our Lord</h2>
         <span class="reference">Matthew 27:11-54</span>
+
+        <div style="font-size: 0.9rem; background: #f9f9f9; padding: 10px; margin-bottom: 20px; border-radius: 4px;">
+            <strong>Roles:</strong><br>
+            <span class="role">N.</span> Narrator | 
+            <span class="role">+</span> Christ | 
+            <span class="role">C.</span> Crowd/Others 
+        </div>
+
+        <p><span class="role narrator">N.</span> At that time: Jesus stood before the governor, and the governor asked him, [cite: 58, 59]</p>
+        <p><span class="role crowd">C.</span> "Are you the King of the Jews?" [cite: 59]</p>
+        <p><span class="role narrator">N.</span> Jesus said, [cite: 60]</p>
+        <p><span class="role christ">+</span> "You have said so." [cite: 61]</p>
         
-        <p>Jesus stood before the governor, Pontius Pilate, who questioned him, "Are you the king of the Jews?" Jesus said, "You say so." And when he was accused by the chief priests and elders, he made no answer. Then Pilate said to him, "Do you not hear how many things they are testifying against you?" But he did not answer him one word, so that the governor was greatly amazed.</p>
+        <p><span class="role narrator">N.</span> But when he was accused by the chief priests and elders, he gave no answer. Then Pilate said to him, [cite: 62, 63]</p>
+        <p><span class="role crowd">C.</span> "Do you not hear how many things they testify against you?" [cite: 64]</p>
+        <p><span class="role narrator">N.</span> But he gave him no answer... so that the governor was greatly amazed. [cite: 65]</p>
+        
+        <p><span class="role narrator">N.</span> Now at the feast the governor was accustomed to release for the crowd any one prisoner whom they wanted... Pilate said to them, [cite: 66, 67, 69]</p>
+        <p><span class="role crowd">C.</span> "Whom do you want me to release for you: Barabbas, or Jesus who is called Christ?" [cite: 70, 71]</p>
+        
+        <p><span class="role narrator">N.</span> The governor again said to them, [cite: 77]</p>
+        <p><span class="role crowd">C.</span> "Which of the two do you want me to release for you?" [cite: 78]</p>
+        <p><span class="role narrator">N.</span> And they said, [cite: 79]</p>
+        <p><span class="role crowd">C.</span> "Barabbas." [cite: 80]</p>
+        <p><span class="role narrator">N.</span> Pilate said to them, "Then what shall I do with Jesus who is called Christ?" They all said, [cite: 81, 82, 83]</p>
+        <p><span class="role crowd">C.</span> "Let him be crucified!" [cite: 84]</p>
+        
+        <p><span class="role narrator">N.</span> And he said, "Why? What evil has he done?" But they shouted all the more, [cite: 85, 86, 87]</p>
+        <p><span class="role crowd">C.</span> "Let him be crucified!" [cite: 88]</p>
 
-        <p>Now on the occasion of the feast the governor was accustomed to release to the crowd one prisoner whom they wished. At that time they had a notorious prisoner called Barabbas. So when they had assembled, Pilate said to them, "Which one do you want me to release to you, Barabbas, or Jesus called Christ?" For he knew that it was out of envy that they had handed him over.</p>
+        <p><span class="role narrator">N.</span> So when Pilate saw that he was gaining nothing... he took water and washed his hands before the crowd, saying, [cite: 89, 90]</p>
+        <p><span class="role crowd">C.</span> "I am innocent of this man's blood; see to it yourselves." [cite: 91]</p>
+        <p><span class="role narrator">N.</span> And all the people answered, [cite: 92]</p>
+        <p><span class="role crowd">C.</span> "His blood be on us and on our children!" [cite: 93]</p>
 
-        <p>While he was sitting on the judgment seat, his wife sent him a message, "Have nothing to do with that righteous man. I suffered much in a dream today because of him." The chief priests and the elders persuaded the crowds to ask for Barabbas but to destroy Jesus. The governor said to them in reply, "Which of the two do you want me to release to you?" They answered, "Barabbas!" Pilate said to them, "Then what shall I do with Jesus called Christ?" They all said, "Let him be crucified!" But he said, "Why? What evil has he done?" They only shouted the louder, "Let him be crucified!"</p>
+        <p><span class="role narrator">N.</span> Then he released for them Barabbas, and having scourged Jesus, delivered him to be crucified. [cite: 94, 95]</p>
 
-        <p>When Pilate saw that he was not succeeding at all, but that a riot was breaking out instead, he took water and washed his hands in the sight of the crowd, saying, "I am innocent of this man's blood. Look to it yourselves." And the whole people said in reply, "His blood be upon us and upon our children." Then he released Barabbas to them, but after he had Jesus scourged, he handed him over to be crucified.</p>
+        <p><span class="role narrator">N.</span> ...And kneeling before him, they mocked him, saying, [cite: 98]</p>
+        <p><span class="role crowd">C.</span> "Hail, King of the Jews!" [cite: 98]</p>
 
-        <p>Then the soldiers of the governor took Jesus inside the praetorium and gathered the whole cohort around him. They stripped off his clothes and threw a scarlet military cloak about him. Weaving a crown out of thorns, they placed it on his head, and a reed in his right hand. And kneeling before him, they mocked him, saying, "Hail, King of the Jews!" They spat upon him and took the reed and kept striking him on the head. And when they had mocked him, they stripped him of the cloak, dressed him in his own clothes, and led him off to crucify him.</p>
+        <p><span class="role narrator">N.</span> ...Those who passed by derided him, wagging their heads and saying, [cite: 113]</p>
+        <p><span class="role crowd">C.</span> "You who would destroy the temple and rebuild it in three days, save yourself! If you are the Son of God, come down from the cross." [cite: 114, 115]</p>
 
-        <p>As they were going out, they met a Cyrenian named Simon; this man they pressed into service to carry his cross. And when they came to a place called Golgotha — which means Place of the Skull — they gave Jesus wine to drink mixed with gall. But when he had tasted it, he refused to drink. After they had crucified him, they divided his garments by casting lots; then they sat down and kept watch over him there. And they placed over his head the written charge against him: This is Jesus, the King of the Jews. Two revolutionaries were crucified with him, one on his right and the other on his left.</p>
+        <p><span class="role narrator">N.</span> So also the chief priests, with the scribes and elders, mocked him, saying, [cite: 116]</p>
+        <p><span class="role crowd">C.</span> "He saved others; he cannot save himself. He is the King of Israel; let him come down now from the cross, and we will believe in him. He trusts in God; let God deliver him now, if he desires him. For he said, 'I am the Son of God.'" [cite: 117, 118, 119, 120, 121, 122]</p>
 
-        <p>Those passing by reviled him, shaking their heads and saying, "You who would destroy the temple and rebuild it in three days, save yourself, if you are the Son of God, and come down from the cross!" Likewise the chief priests with the scribes and elders mocked him and said, "He saved others; he cannot save himself. So he is the king of Israel! Let him come down from the cross now, and we will believe in him. He trusted in God; let him deliver him now if he wants him. For he said, 'I am the Son of God.'" The revolutionaries who were crucified with him also kept abusing him in the same way.</p>
+        <p><span class="role narrator">N.</span> ...About the ninth hour Jesus cried out with a loud voice, saying, [cite: 126]</p>
+        <p><span class="role christ">+</span> "Eli, Eli, lema sabachthani?" [cite: 127]</p>
+        <p><span class="role narrator">N.</span> that is, "My God, my God, why have you forsaken me?" And some of the bystanders, hearing it, said, [cite: 128, 129, 130]</p>
+        <p><span class="role crowd">C.</span> "This man is calling Elijah." [cite: 131]</p>
+        
+        <p><span class="role narrator">N.</span> ...But the others said, [cite: 134]</p>
+        <p><span class="role crowd">C.</span> "Wait, let us see whether Elijah will come to save him." [cite: 135]</p>
+        
+        <p><span class="role narrator">N.</span> And Jesus cried out again with a loud voice and yielded up his spirit. [cite: 136]</p>
+        
+        <span class="rubric">(Kneel and pause for a while) </span>
 
-        <p>From noon onward, darkness came over the whole land until three in the afternoon. And about three o'clock Jesus cried out in a loud voice, "Eli, Eli, lema sabachthani?" which means, "My God, my God, why have you abandoned me?" Some of the bystanders who heard it said, "This one is calling for Elijah." Immediately one of them ran to get a sponge; he soaked it in wine, and putting it on a reed, gave it to him to drink. But the rest said, "Wait, let us see if Elijah comes to save him." But Jesus cried out again in a loud voice, and yielded up his spirit.</p>
-
-        <span class="rubric">[Here all kneel and pause for a short time.]</span>
-
-        <p>And behold, the veil of the sanctuary was torn in two from top to bottom. The earth quaked, rocks were split, tombs were opened, and the bodies of many saints who had fallen asleep were raised. And coming forth from their tombs after his resurrection, they entered the holy city and appeared to many. The centurion and those with him who were keeping watch over Jesus feared greatly when they saw the earthquake and all that was happening, and they said, "Truly, this was the Son of God!"</p>
+        <p><span class="role narrator">N.</span> And behold, the curtain of the temple was torn in two... When the centurion and those who were with him saw the earthquake... they were filled with awe and said, [cite: 138, 142, 143]</p>
+        <p><span class="role crowd">C.</span> "Truly this was the Son of God!" [cite: 144]</p>
     </section>
 
 </div>
 
 <footer>
-    <p><a href="#top" class="top-link">↑ Back to Top</a></p>
-    <p>Holy Week 2026 | Year A - Matthew</p>
+    <p>Year A Passion | Matthew 27:11-54</p>
 </footer>
 
 </body>
