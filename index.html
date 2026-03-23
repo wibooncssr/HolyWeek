@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Palm Sunday 2026 Liturgy</title>
-    <style>
+  <style>
         :root {
             --liturgical-red: #990000;
             --text-main: #1a1a1a;
@@ -42,32 +42,35 @@
         }
         h2 { color: var(--liturgical-red); font-size: 1.4rem; margin-top: 0; border-bottom: 2px solid #eee; padding-bottom: 10px; }
         .reference { font-weight: 600; color: #666; font-size: 0.85rem; display: block; margin-bottom: 1.5rem; text-transform: uppercase; }
-        .response { font-weight: bold; color: var(--liturgical-red); }
-        .rubric { font-style: italic; color: #d32f2f; font-size: 0.9rem; display: block; margin: 20px 0; text-align: center; border: 1px dashed #ccc; padding: 10px; }
-        .verse-break { margin-bottom: 1.5rem; display: block; }
-        footer { text-align: center; padding: 3rem 1rem; color: #888; font-size: 0.8rem; }
-        .top-link { color: var(--liturgical-red); text-decoration: none; font-weight: bold; }
-        /* Script Formatting */
+        
+        /* Role Markers */
         .role {
             font-weight: bold;
-            color: var(--liturgical-red);
             display: inline-block;
-            min-width: 30px;
+            min-width: 25px;
         }
-        .christ { color: #000; font-weight: bold; }
-        .narrator { color: #444; font-weight: bold; }
-        .crowd { color: #d32f2f; font-weight: bold; }
+        .narrator { color: #555; }
+        .christ { color: #000; font-size: 1.2rem; vertical-align: middle; }
+        .crowd-label { color: var(--liturgical-red); }
         
+        /* Bold Crowd Text for Readability */
+        .crowd-text {
+            font-weight: bold;
+            color: #000;
+        }
+
         .rubric { 
             font-style: italic; 
-            color: #777; 
-            font-size: 0.9rem; 
+            color: #d32f2f; 
+            font-size: 0.95rem; 
             display: block; 
-            margin: 20px 0; 
+            margin: 25px 0; 
             text-align: center; 
             border: 1px dashed #ccc; 
-            padding: 10px; 
+            padding: 15px;
+            background: #fffafa;
         }
+        
         footer { text-align: center; padding: 3rem 1rem; color: #888; font-size: 0.8rem; }
         
         @media (max-width: 600px) {
@@ -182,69 +185,70 @@
 
 <div class="container">
 
-    <section id="passion">
+<section id="passion">
         <h2>The Passion of Our Lord</h2>
         <span class="reference">Matthew 27:11-54</span>
 
-        <div style="font-size: 0.9rem; background: #f9f9f9; padding: 10px; margin-bottom: 20px; border-radius: 4px;">
-            <strong>Roles:</strong><br>
-            <span class="role">N.</span> Narrator | 
-            <span class="role">+</span> Christ | 
-            <span class="role">C.</span> Crowd/Others 
+        <div style="font-size: 0.9rem; background: #f9f9f9; padding: 10px; margin-bottom: 20px; border-radius: 4px; text-align: center;">
+            <span class="role narrator">N.</span> Narrator | 
+            <span class="role christ">✝</span> Christ | 
+            <span class="role crowd-label">C.</span> Crowd
         </div>
 
-        <p><span class="role narrator">N.</span> At that time: Jesus stood before the governor, and the governor asked him, [cite: 58, 59]</p>
-        <p><span class="role crowd">C.</span> "Are you the King of the Jews?" [cite: 59]</p>
-        <p><span class="role narrator">N.</span> Jesus said, [cite: 60]</p>
-        <p><span class="role christ">+</span> "You have said so." [cite: 61]</p>
+        <p><span class="role narrator">N.</span> At that time: Jesus stood before the governor, and the governor asked him,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Are you the King of the Jews?"</span></p>
         
-        <p><span class="role narrator">N.</span> But when he was accused by the chief priests and elders, he gave no answer. Then Pilate said to him, [cite: 62, 63]</p>
-        <p><span class="role crowd">C.</span> "Do you not hear how many things they testify against you?" [cite: 64]</p>
-        <p><span class="role narrator">N.</span> But he gave him no answer... so that the governor was greatly amazed. [cite: 65]</p>
+        <p><span class="role narrator">N.</span> Jesus said,</p>
+        <p><span class="role christ">✝</span> "You have said so."</p>
         
-        <p><span class="role narrator">N.</span> Now at the feast the governor was accustomed to release for the crowd any one prisoner whom they wanted... Pilate said to them, [cite: 66, 67, 69]</p>
-        <p><span class="role crowd">C.</span> "Whom do you want me to release for you: Barabbas, or Jesus who is called Christ?" [cite: 70, 71]</p>
+        <p><span class="role narrator">N.</span> But when he was accused by the chief priests and elders, he gave no answer. Then Pilate said to him,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Do you not hear how many things they testify against you?"</span></p>
         
-        <p><span class="role narrator">N.</span> The governor again said to them, [cite: 77]</p>
-        <p><span class="role crowd">C.</span> "Which of the two do you want me to release for you?" [cite: 78]</p>
-        <p><span class="role narrator">N.</span> And they said, [cite: 79]</p>
-        <p><span class="role crowd">C.</span> "Barabbas." [cite: 80]</p>
-        <p><span class="role narrator">N.</span> Pilate said to them, "Then what shall I do with Jesus who is called Christ?" They all said, [cite: 81, 82, 83]</p>
-        <p><span class="role crowd">C.</span> "Let him be crucified!" [cite: 84]</p>
+        <p><span class="role narrator">N.</span> But he gave him no answer, not even to a single charge, so that the governor was greatly amazed. Now at the feast the governor was accustomed to release for the crowd any one prisoner whom they wanted. And they had then a notorious prisoner called Barabbas. So when they had gathered, Pilate said to them,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Whom do you want me to release for you: Barabbas, or Jesus who is called Christ?"</span></p>
         
-        <p><span class="role narrator">N.</span> And he said, "Why? What evil has he done?" But they shouted all the more, [cite: 85, 86, 87]</p>
-        <p><span class="role crowd">C.</span> "Let him be crucified!" [cite: 88]</p>
-
-        <p><span class="role narrator">N.</span> So when Pilate saw that he was gaining nothing... he took water and washed his hands before the crowd, saying, [cite: 89, 90]</p>
-        <p><span class="role crowd">C.</span> "I am innocent of this man's blood; see to it yourselves." [cite: 91]</p>
-        <p><span class="role narrator">N.</span> And all the people answered, [cite: 92]</p>
-        <p><span class="role crowd">C.</span> "His blood be on us and on our children!" [cite: 93]</p>
-
-        <p><span class="role narrator">N.</span> Then he released for them Barabbas, and having scourged Jesus, delivered him to be crucified. [cite: 94, 95]</p>
-
-        <p><span class="role narrator">N.</span> ...And kneeling before him, they mocked him, saying, [cite: 98]</p>
-        <p><span class="role crowd">C.</span> "Hail, King of the Jews!" [cite: 98]</p>
-
-        <p><span class="role narrator">N.</span> ...Those who passed by derided him, wagging their heads and saying, [cite: 113]</p>
-        <p><span class="role crowd">C.</span> "You who would destroy the temple and rebuild it in three days, save yourself! If you are the Son of God, come down from the cross." [cite: 114, 115]</p>
-
-        <p><span class="role narrator">N.</span> So also the chief priests, with the scribes and elders, mocked him, saying, [cite: 116]</p>
-        <p><span class="role crowd">C.</span> "He saved others; he cannot save himself. He is the King of Israel; let him come down now from the cross, and we will believe in him. He trusts in God; let God deliver him now, if he desires him. For he said, 'I am the Son of God.'" [cite: 117, 118, 119, 120, 121, 122]</p>
-
-        <p><span class="role narrator">N.</span> ...About the ninth hour Jesus cried out with a loud voice, saying, [cite: 126]</p>
-        <p><span class="role christ">+</span> "Eli, Eli, lema sabachthani?" [cite: 127]</p>
-        <p><span class="role narrator">N.</span> that is, "My God, my God, why have you forsaken me?" And some of the bystanders, hearing it, said, [cite: 128, 129, 130]</p>
-        <p><span class="role crowd">C.</span> "This man is calling Elijah." [cite: 131]</p>
+        <p><span class="role narrator">N.</span> For he knew that it was out of envy that they had delivered him up. Besides, while he was sitting on the judgment seat, his wife sent word to him, "Have nothing to do with that righteous man, for I have suffered much because of him today in a dream." Now the chief priests and the elders persuaded the crowd to ask for Barabbas and destroy Jesus. The governor again said to them,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Which of the two do you want me to release for you?"</span></p>
         
-        <p><span class="role narrator">N.</span> ...But the others said, [cite: 134]</p>
-        <p><span class="role crowd">C.</span> "Wait, let us see whether Elijah will come to save him." [cite: 135]</p>
+        <p><span class="role narrator">N.</span> And they said,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Barabbas."</span></p>
         
-        <p><span class="role narrator">N.</span> And Jesus cried out again with a loud voice and yielded up his spirit. [cite: 136]</p>
+        <p><span class="role narrator">N.</span> Pilate said to them, "Then what shall I do with Jesus who is called Christ?" They all said,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Let him be crucified!"</span></p>
         
-        <span class="rubric">(Kneel and pause for a while) </span>
+        <p><span class="role narrator">N.</span> And he said, "Why? What evil has he done?" But they shouted all the more,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Let him be crucified!"</span></p>
 
-        <p><span class="role narrator">N.</span> And behold, the curtain of the temple was torn in two... When the centurion and those who were with him saw the earthquake... they were filled with awe and said, [cite: 138, 142, 143]</p>
-        <p><span class="role crowd">C.</span> "Truly this was the Son of God!" [cite: 144]</p>
+        <p><span class="role narrator">N.</span> So when Pilate saw that he was gaining nothing, but rather that a riot was beginning, he took water and washed his hands before the crowd, saying,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"I am innocent of this man's blood; see to it yourselves."</span></p>
+        
+        <p><span class="role narrator">N.</span> And all the people answered,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"His blood be on us and on our children!"</span></p>
+
+        <p><span class="role narrator">N.</span> Then he released for them Barabbas, and having scourged Jesus, delivered him to be crucified. Then the soldiers of the governor took Jesus into the governor's headquarters... And kneeling before him, they mocked him, saying,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Hail, King of the Jews!"</span></p>
+
+        <p><span class="role narrator">N.</span> And they spat on him and took the reed and struck him on the head. And when they had mocked him, they stripped him of the robe and put his own clothes on him and led him away to crucify him... Over his head they put the charge against him, which read, "This is Jesus, the King of the Jews." Then two robbers were crucified with him, one on the right and one on the left. And those who passed by derided him, wagging their heads and saying,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"You who would destroy the temple and rebuild it in three days, save yourself! If you are the Son of God, come down from the cross."</span></p>
+
+        <p><span class="role narrator">N.</span> So also the chief priests, with the scribes and elders, mocked him, saying,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"He saved others; he cannot save himself. He is the King of Israel; let him come down now from the cross, and we will believe in him. He trusts in God; let God deliver him now, if he desires him. For he said, 'I am the Son of God.'"</span></p>
+
+        <p><span class="role narrator">N.</span> And the robbers who were crucified with him also reviled him in the same way. Now from the sixth hour there was darkness over all the land until the ninth hour. And about the ninth hour Jesus cried out with a loud voice, saying,</p>
+        <p><span class="role christ">✝</span> "Eli, Eli, lema sabachthani?"</p>
+        
+        <p><span class="role narrator">N.</span> that is, "My God, my God, why have you forsaken me?" And some of the bystanders, hearing it, said,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"This man is calling Elijah."</span></p>
+        
+        <p><span class="role narrator">N.</span> And one of them at once ran and took a sponge, filled it with sour wine, and put it on a reed and gave it to him to drink. But the others said,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Wait, let us see whether Elijah will come to save him."</span></p>
+        
+        <p><span class="role narrator">N.</span> And Jesus cried out again with a loud voice and yielded up his spirit.</p>
+        
+        <span class="rubric">(Kneel and pause for a while)</span>
+
+        <p><span class="role narrator">N.</span> And behold, the curtain of the temple was torn in two, from top to bottom. And the earth shook, and the rocks were split. The tombs also were opened. And many bodies of the saints who had fallen asleep were raised... When the centurion and those who were with him... saw the earthquake and what took place, they were filled with awe and said,</p>
+        <p><span class="role crowd-label">C.</span> <span class="crowd-text">"Truly this was the Son of God!"</span></p>
     </section>
 
 </div>
